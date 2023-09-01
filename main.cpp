@@ -5,13 +5,10 @@
 #include "SortAlgortihms.h"
 #include "time.h"
 
-//Seed generator for random Integers
-double rng() {
-    static std::seed_seq seed{static_cast<long unsigned int>(time(nullptr))};
-    static std::mt19937 mersenne_engine{seed};
-    static std::uniform_real_distribution<double> dist(0.0, 10000.0);
-    return dist(mersenne_engine);
-}
+/**
+ * Welcome to branch 1
+ *
+ */
 
 int main() {
     std::cout << "Hello, World!" << std::endl;
