@@ -3,7 +3,7 @@
 #include <random>
 #include <cassert>
 #include "SortAlgortihms.h"
-#include "time.h"
+#include <ctime>
 
 //Seed generator for random Integers
 double rng() {
