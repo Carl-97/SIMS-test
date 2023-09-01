@@ -20,6 +20,7 @@ int main() {
     insertion insertion;
     std::vector<double> data;
     data.resize(1000);
+    std::generate(std::begin(data), std::end(data), rng);
     std::cout << *data.begin() << " " << *data.end() << "\n";
     insertion(data.begin(), data.end());
     assert(std::is_sorted(data.begin(),data.end()));
